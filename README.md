@@ -19,4 +19,4 @@ Een responsieve, zelfstandige introductiewebsite voor capelle750.nl met duidelij
 
 ## Inhoud en positie
 
-De teksten onderscheiden het particuliere hobbyproject expliciet van de gemeente. Gebruik van deze website is geen uitspraak over eventuele rechten op een domeinnaam. Feiten en bronnen zijn in de site zelf gekoppeld.
+particuliere hobbyproject expliciet van de gemeente.Feiten en bronnen zijn in de site zelf gekoppeld.
