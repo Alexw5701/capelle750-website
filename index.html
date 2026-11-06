@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172d35">
+  <meta name="description" content="Capelle750.nl: onafhankelijk historisch hobbyproject over Capelle aan den IJssel, Capelle, Kapelle en verwante plaatsnamen in Nederland. Website in ontwikkeling.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_NL">
+  <meta property="og:site_name" content="Capelle 750">
+  <meta property="og:title" content="Capelle 750 | Van Capelle tot Kapelle">
+  <meta property="og:description" content="Een onafhankelijk historisch informatieplatform in ontwikkeling: één naam, vele verhalen.">
+  <meta property="og:url" content="https://capelle750.nl/">
+  <link rel="canonical" href="https://capelle750.nl/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <title>Capelle 750 | Van Capelle tot Kapelle</title>
+  <style>
+    :root{--ink:#18343a;--ink2:#264b50;--cream:#f6f3eb;--paper:#fffdf8;--amber:#d6ad70;--amberDark:#9a693c;--line:#d9d5c8;--muted:#606d6a;--max:1170px}
+    *,*::before,*::after{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--ink);background:var(--cream);font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:16px;line-height:1.65}
+    a{color:inherit}
+    a:focus-visible,button:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+    .skip-link{position:absolute;top:-100px;left:1rem;background:white;color:black;padding:.6rem 1rem;z-index:100}.skip-link:focus{top:1rem}
+    .wrap{max-width:var(--max);padding:0 28px;margin:0 auto}
+    .topbar{background:#10262d;color:#e9ece6;font-size:12px;font-weight:650;letter-spacing:.13em;text-transform:uppercase;text-align:center;padding:9px 20px}
+    .topbar .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#d7ac68;margin-right:8px;vertical-align:2px}
+    header{background:var(--paper);border-bottom:1px solid #e7e4d9}
+    .header-inner{min-height:86px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:13px;text-decoration:none;line-height:1;white-space:nowrap}
+    .brand-symbol{width:43px;height:43px;display:grid;place-items:center;background:var(--ink);color:#f6ddaf;font:700 24px Georgia,serif;border:1px solid #cda97b}
+    .brand-words{display:flex;flex-direction:column;gap:5px;font-size:21px;letter-spacing:.095em;font-weight:850}
+    .brand-words strong{color:var(--amberDark);font-weight:850}
+    .brand-words small{font-size:9px;letter-spacing:.21em;font-weight:750;color:var(--muted)}
+    nav{display:flex;align-items:center;gap:30px}
+    nav a{font-size:13px;text-decoration:none;font-weight:700;letter-spacing:.015em;border-bottom:2px solid transparent;padding:7px 0}
+    nav a:hover{border-bottom-color:var(--amberDark)}
+    .nav-toggle{display:none;border:1px solid #d4d3cd;color:var(--ink);background:transparent;border-radius:3px;padding:8px 11px;font:inherit;font-weight:700;cursor:pointer}
+    .hero{position:relative;overflow:hidden;background:linear-gradient(113deg,#19363e 0%,#142e37 57%,#1f4550 100%);color:#fff}
+    .hero::before{content:"";position:absolute;inset:0;opacity:.19;background-image:radial-gradient(#f3ddb7 .7px, transparent .7px);background-size:19px 19px;mask-image:linear-gradient(90deg,transparent 30%,black)}
+    .hero-inner{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;min-height:590px;gap:28px}
+    .hero-copy{padding:74px 0 86px}
+    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.22em;font-weight:800;color:var(--amberDark);display:block}
+    .hero .eyebrow{color:#eccb95}
+    .hero h1{font:normal clamp(50px,5.3vw,82px)/1.09 Georgia,"Times New Roman",serif;letter-spacing:-.032em;margin:21px 0 27px;max-width:730px}
+    .hero h1 em{font-style:italic;color:#e9bc80}
+    .hero p{max-width:570px;font-size:18px;color:#dbe5e1;line-height:1.72;margin:0 0 30px}
+    .actions{display:flex;align-items:center;flex-wrap:wrap;gap:22px}
+    .button{display:inline-flex;align-items:center;gap:19px;text-decoration:none;font-size:14px;font-weight:800;border-radius:3px;padding:14px 20px;background:var(--amber);color:#172c32;transition:transform .2s,background-color .2s}
+    .button:hover{transform:translateY(-2px);background:#e8c28d}
+    .text-link{font-size:14px;font-weight:750;text-decoration:none;border-bottom:1px solid #8faba8;padding-bottom:3px}
+    .hero-art{align-self:stretch;display:flex;align-items:center;justify-content:center;position:relative;min-height:470px;isolation:isolate}
+    .hero-art::before{content:"";width:min(36vw,460px);height:min(36vw,460px);border:1px solid #bdac8d65;position:absolute;border-radius:50%;transform:translate(12px,0)}
+    .hero-art::after{content:"";width:min(28vw,350px);height:min(28vw,350px);border:1px solid #bdac8d49;position:absolute;border-radius:50%;transform:translate(12px,0)}
+    .illustration{position:relative;z-index:1;width:min(100%,485px);height:auto;filter:drop-shadow(0 18px 28px #0a20274d)}
+    .anniversary-mark{position:absolute;bottom:72px;right:-10px;z-index:2;width:118px;height:118px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-radius:50%;background:var(--amber);color:var(--ink);transform:rotate(10deg);box-shadow:0 8px 28px #10262d77}
+    .anniversary-mark b{font:700 39px/.9 Georgia,serif}.anniversary-mark small{font-size:10px;line-height:1.2;margin-top:7px;font-weight:850;letter-spacing:.09em;text-align:center}
+    .status-line{position:relative;background:#e9e0ce;border-bottom:1px solid #d8ceb9}
+    .status-content{display:flex;gap:18px;align-items:center;padding:23px 0}
+    .status-icon{width:43px;height:43px;border:1px solid #b8a178;border-radius:50%;display:grid;place-items:center;flex:none;font-size:22px}
+    .status-content p{font-size:14px;margin:0;color:#4f5049}.status-content strong{display:block;font-size:16px;color:#253d3e}
+    .section{padding:94px 0}
+    .section-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:34px}
+    h2{font:normal clamp(36px,3.5vw,54px)/1.15 Georgia,"Times New Roman",serif;letter-spacing:-.025em;margin:12px 0 0}
+    h2 em{font-style:italic;color:var(--amberDark)}
+    .section-heading p{max-width:400px;margin:0;color:var(--muted);font-size:15px}
+    .intro{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
+    .intro h2{margin-bottom:24px}.intro p{font-size:17px;color:#4d6260}
+    .intro-side{padding:40px 42px;background:#ede7db;border-left:3px solid var(--amberDark);position:relative}
+    .intro-side::before{content:'“';position:absolute;top:4px;left:32px;font:100px Georgia,serif;opacity:.16}
+    .intro-side p{font:italic 25px/1.5 Georgia,serif;color:var(--ink);margin:15px 0 12px;position:relative}
+    .intro-side small{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:700}
+    .place-section{background:#eaece6}
+    .places{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}
+    .place-card{background:var(--paper);border:1px solid #dadfda;padding:29px 25px 26px;min-height:255px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+    .place-card:hover{transform:translateY(-4px);box-shadow:0 10px 24px #243b3b12}
+    .place-number{font:italic 16px Georgia,serif;color:#ac8354}
+    .place-card h3{font:normal 26px/1.18 Georgia,serif;margin:26px 0 13px}
+    .place-card p{font-size:14px;color:#596965;line-height:1.65;margin:0}
+    .place-card .region{margin-top:auto;padding-top:20px;font-size:11px;text-transform:uppercase;font-weight:800;letter-spacing:.15em;color:#9c7444}
+    .note{font-size:13px;color:#536561;margin-top:22px}
+    .timeline-section{background:var(--paper)}
+    .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:0;margin-top:55px;position:relative}
+    .timeline::before{content:"";position:absolute;left:15px;right:15px;top:8px;height:2px;background:#dbb781}
+    .event{padding:33px 22px 0 0;position:relative}
+    .event::before{content:"";position:absolute;width:17px;height:17px;border:4px solid #d4ab71;border-radius:50%;background:var(--paper);top:0;left:0}
+    .event b{display:block;font:normal 32px Georgia,serif;letter-spacing:-.03em;color:var(--ink)}
+    .event p{font-size:13px;line-height:1.6;color:#63716e;margin:10px 0 0;max-width:180px}
+    .sources{background:#19353e;color:#d4e1df}
+    .sources h2{color:white}.sources .eyebrow{color:var(--amber)}
+    .source-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+    .sources p{color:#c4d4d0}
+    .source-list{list-style:none;margin:0;padding:0;border-top:1px solid #ffffff30}
+    .source-list li{border-bottom:1px solid #ffffff30}
+    .source-list a{padding:16px 0;display:flex;justify-content:space-between;align-items:center;gap:15px;text-decoration:none;font-size:14px;font-weight:700}
+    .source-list a:hover{color:#e8bd81}
+    .source-list span{color:var(--amber);font-size:18px}
+    footer{background:#10282f;color:#b8c9c7;padding:34px 0}
+    .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}
+    .footer-brand{font-size:16px;font-weight:850;letter-spacing:.1em;color:#fff}
+    .footer-brand span{color:var(--amber)}
+    footer p{max-width:740px;font-size:12px;margin:8px 0 0}
+    footer .legal{font-size:11px;text-align:right;white-space:nowrap}
+    @media(max-width:1000px){.places{grid-template-columns:repeat(2,1fr)}.hero-art{opacity:.95}.hero h1{font-size:65px}}
+    @media(max-width:760px){.wrap{padding:0 20px}.topbar{font-size:10px}.header-inner{min-height:76px}.brand-words{font-size:18px}.nav-toggle{display:block}nav{display:none;position:absolute;z-index:10;top:116px;left:0;right:0;background:var(--paper);padding:18px 24px 22px;border-bottom:1px solid #d3d0c8;box-shadow:0 12px 18px #13232b20;flex-direction:column;align-items:start;gap:12px}nav.open{display:flex}.hero-inner{grid-template-columns:1fr;min-height:0;gap:0}.hero-copy{padding:64px 0 5px}.hero h1{font-size:clamp(48px,10vw,68px)}.hero p{font-size:16px}.hero-art{min-height:290px;max-height:325px}.illustration{width:min(86%,350px)}.anniversary-mark{bottom:18px;right:14px;width:92px;height:92px}.anniversary-mark b{font-size:32px}.anniversary-mark small{font-size:8px}.hero-art::before{width:280px;height:280px}.hero-art::after{width:215px;height:215px}.section{padding:66px 0}.section-heading{display:block}.section-heading p{margin-top:20px}.intro,.source-grid{grid-template-columns:1fr;gap:30px}.intro-side{padding:30px}.timeline{grid-template-columns:1fr 1fr;row-gap:28px}.timeline::before{display:none}.event{padding:0 10px 0 26px}.event::before{width:12px;height:12px;top:13px;left:0;border-width:3px}.footer-inner{display:block}footer .legal{text-align:left;margin-top:22px}}
+    @media(max-width:440px){.brand-symbol{width:37px;height:37px}.brand-words{font-size:15px}.brand-words small{font-size:8px}.places{grid-template-columns:1fr}.place-card{min-height:0}.hero h1{font-size:46px}.hero-art{min-height:260px}.actions{gap:15px}.button{font-size:13px;padding:12px 15px}.section-heading h2{font-size:37px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button,.place-card{transition:none}}
+  </style>
+  <script defer>
+    document.addEventListener('DOMContentLoaded',()=>{
+      const b=document.querySelector('.nav-toggle'),n=document.querySelector('#main-nav');
+      if(b&&n){b.addEventListener('click',()=>{const open=n.classList.toggle('open');b.setAttribute('aria-expanded',String(open));b.textContent=open?'Sluiten':'Menu';});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='Menu';}));}
+    });
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#inhoud">Direct naar inhoud</a>
+<div class="topbar"><span class="dot"></span> Een onafhankelijk historisch initiatief · Website in ontwikkeling</div>
+<header>
+  <div class="wrap header-inner">
+    <a class="brand" href="#start" aria-label="Capelle 750 - terug naar boven">
+      <span class="brand-symbol">C</span><span class="brand-words">CAPELLE <strong>750</strong><small>VERHALEN &amp; GESCHIEDENIS</small></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav id="main-nav" aria-label="Hoofdnavigatie"><a href="#over">Het initiatief</a><a href="#plaatsen">Capelle &amp; Kapelle</a><a href="#tijdlijn">Tijdlijn</a><a href="#bronnen">Bronnen</a></nav>
+  </div>
+</header>
+<main id="inhoud">
+<section class="hero" id="start"><div class="wrap hero-inner">
+  <div class="hero-copy">
+    <span class="eyebrow">Geschiedenis verbindt plaatsen</span>
+    <h1>Van Capelle<br>tot <em>Kapelle.</em><br>Eén naam.<br>Vele verhalen.</h1>
+    <p>Een ontdekkingstocht langs Capelle aan den IJssel en andere Capelles en Kapelles in Nederland. Van oude plaatsnamen tot bijzondere verhalen door de eeuwen heen.</p>
+    <div class="actions"><a class="button" href="#over">Ontdek het initiatief <span aria-hidden="true">↗</span></a><a class="text-link" href="#plaatsen">Bekijk de plaatsen ↓</a></div>
+  </div>
+  <div class="hero-art" aria-hidden="true">
+    <svg class="illustration" viewBox="0 0 530 550" role="presentation" xmlns="http://www.w3.org/2000/svg">
+      <defs><linearGradient id="river" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#bbd7c8"/><stop offset="1" stop-color="#6d9a9e"/></linearGradient><linearGradient id="wall" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#f1d7ad"/><stop offset="1" stop-color="#b98b5d"/></linearGradient></defs>
+      <circle cx="265" cy="275" r="201" fill="#254851" opacity=".7"/>
+      <g fill="none" stroke="#d4b48a" opacity=".36"><circle cx="265" cy="275" r="197"/><circle cx="265" cy="275" r="172"/><path d="M65 305h400M105 181h318M130 395h275"/></g>
+      <path d="M36 435c65-53 99-3 164-24 59-19 82-69 145-61 51 7 87 39 149 9" fill="none" stroke="url(#river)" stroke-width="39" stroke-linecap="round" opacity=".45"/>
+      <path d="M25 451c65-53 101-5 164-26 63-22 87-69 152-62 53 6 94 41 163 10" fill="none" stroke="#add3ca" stroke-width="5" stroke-dasharray="2 19" stroke-linecap="round" opacity=".7"/>
+      <g transform="translate(112 95)">
+        <path d="M33 279V149L73 112l41 37v130" fill="#bf9165" stroke="#f6dfbc" stroke-width="3"/>
+        <path d="M43 163l30-28 30 28" fill="none" stroke="#f6dfbc" stroke-width="4"/>
+        <path d="M78 281V66h68v215" fill="url(#wall)" stroke="#f7dfba" stroke-width="4"/>
+        <path d="M70 68l42-44 42 44" fill="#ac7749" stroke="#f4d5a6" stroke-width="4"/>
+        <path d="M110 24V-3M99 11h22" stroke="#f4d5a6" stroke-width="4" stroke-linecap="round"/>
+        <path d="M101 108q11-13 22 0v38h-22Z" fill="#24454e" stroke="#f8e0bc" stroke-width="3"/>
+        <path d="M98 221q14-17 28 0v59H98Z" fill="#31525a" stroke="#f8e0bc" stroke-width="3"/>
+        <path d="M149 279V164l69-31 68 31v115" fill="#b88b65" stroke="#f9e2c0" stroke-width="3"/>
+        <path d="M141 163l77-48 76 48" fill="none" stroke="#e7c197" stroke-width="12" stroke-linejoin="round"/>
+        <path d="M176 211h28v36h-28ZM231 211h27v36h-27Z" fill="#355962" stroke="#f9e2c0" stroke-width="3"/>
+        <path d="M-7 282H324" stroke="#e7c59c" stroke-width="6" stroke-linecap="round"/>
+      </g>
+      <g fill="#d6b98d" opacity=".75"><circle cx="87" cy="191" r="3"/><circle cx="425" cy="210" r="3"/><circle cx="430" cy="307" r="2.5"/><circle cx="140" cy="340" r="3"/></g>
+    </svg>
+    <div class="anniversary-mark"><b>750</b><small>CAPELLE<br>2028</small></div>
+  </div>
+</div></section>
+<section class="status-line" aria-label="Website status"><div class="wrap status-content"><span class="status-icon" aria-hidden="true">✧</span><p><strong>Deze website is in ontwikkeling.</strong> We bouwen stap voor stap aan een toegankelijk overzicht van historische gebeurtenissen, plaatsnamen, bronnen en verhalen. Binnenkort verschijnt hier meer.</p></div></section>
+<section class="section" id="over"><div class="wrap intro">
+  <div><span class="eyebrow">Over het initiatief</span><h2>Een reis door<br><em>de geschiedenis.</em></h2><p>Welkom op capelle750.nl. Dit onafhankelijke historische informatieplatform onderzoekt de geschiedenis van Capelle aan den IJssel én van andere plaatsen met de naam Capelle, Kapelle of historische schrijfwijzen daarvan.</p><p>De website maakt deel uit van een particulier hobbyproject over Nederlandse plaatsen, hun ontstaansgeschiedenis en bijzondere jubilea. We verzamelen verhalen, markante gebeurtenissen en verwijzingen naar historische bronnen.</p></div>
+  <aside class="intro-side"><p>Verschillende plaatsen. Verwante namen. Elk met een eigen geschiedenis.</p><small>Het uitgangspunt van Capelle 750</small></aside>
+</div></section>
+<section class="section place-section" id="plaatsen"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Plaatsen met een verhaal</span><h2>Capelle is <em>niet alleen.</em></h2></div><p>De naam Capelle of Kapelle komt op verschillende plekken in Nederland voor. We verkennen de verhalen achter die plaatsnamen, zonder te veronderstellen dat al deze plaatsen dezelfde geschiedenis delen.</p></div>
+<div class="places">
+  <article class="place-card"><span class="place-number">01 /</span><h3>Capelle aan den IJssel</h3><p>Aan de Hollandse IJssel: een plaats met een lange geschiedenis, waarvan een vroege schriftelijke vermelding dateert uit 1278.</p><span class="region">Zuid-Holland</span></article>
+  <article class="place-card"><span class="place-number">02 /</span><h3>Capelle in Brabant</h3><p>Een van de historische dorpskernen van Sprang-Capelle, met een eigen ontwikkeling in het landschap van de Langstraat.</p><span class="region">Noord-Brabant</span></article>
+  <article class="place-card"><span class="place-number">03 /</span><h3>Kapelle</h3><p>Een Zeeuws dorp én de naam van een gemeente op Zuid-Beveland, met een geschiedenis die verbonden is aan het platteland en de fruitteelt.</p><span class="region">Zeeland</span></article>
+  <article class="place-card"><span class="place-number">04 /</span><h3>Oost- en Westkapelle</h3><p>Twee bekende plaatsnamen op Walcheren, met ieder hun eigen geschiedenis en band met het Zeeuwse kustlandschap.</p><span class="region">Zeeland</span></article>
+</div><p class="note">Dit is een eerste selectie. Ook andere historische vermeldingen en plaatsnamen kunnen later worden toegevoegd.</p></div></section>
+<section class="section timeline-section" id="tijdlijn"><div class="wrap"><div class="section-heading"><div><span class="eyebrow">Capelle aan den IJssel</span><h2>Vijf momenten<br><em>door de tijd.</em></h2></div><p>Een korte voorproef van de tijdlijn die we verder willen uitbouwen. De jaartallen hieronder hebben betrekking op Capelle aan den IJssel.</p></div>
+<div class="timeline">
+  <div class="event"><b>1278</b><p>Vroege schriftelijke vermelding van Capelle, het uitgangspunt voor 750 jaar in 2028.</p></div>
+  <div class="event"><b>1350</b><p>Capelle ontwikkelt zich als afzonderlijk ambacht binnen de middeleeuwse bestuurlijke verhoudingen.</p></div>
+  <div class="event"><b>1593</b><p>Herbouw van de Dorpskerk na de verwoesting in de zestiende eeuw.</p></div>
+  <div class="event"><b>1977</b><p>Capelle krijgt de status van groeikern en groeit verder uit tot moderne stad.</p></div>
+  <div class="event"><b>2028</b><p>Het jaar waarin Capelle aan den IJssel terugblikt op 750 jaar geschiedenis.</p></div>
+</div></div></section>
+<section class="section sources" id="bronnen"><div class="wrap source-grid"><div><span class="eyebrow">Verder ontdekken</span><h2>De verhalen<br>beginnen bij <em>de bronnen.</em></h2><p>We baseren de historische achtergrond op publiek toegankelijke informatie. Deze bronnen vormen het vertrekpunt voor verdere verdieping en aanvullingen.</p></div><ul class="source-list">
+  <li><a href="https://www.capelleaandenijssel.nl/geschiedenis-capelle" target="_blank" rel="noopener noreferrer">Gemeente Capelle aan den IJssel — Geschiedenis <span aria-hidden="true">↗</span></a></li>
+  <li><a href="https://hvc-capelle.nl/historie/" target="_blank" rel="noopener noreferrer">Historische Vereniging Capelle — Historie <span aria-hidden="true">↗</span></a></li>
+  <li><a href="https://www.geschiedenisvanzuidholland.nl/verhalen/verhalen/geschiedenis-van-capelle-aan-den-ijssel/" target="_blank" rel="noopener noreferrer">Geschiedenis van Zuid-Holland — Capelle <span aria-hidden="true">↗</span></a></li>
+  <li><a href="https://encyclopedievanzeeland.nl/Kapelle" target="_blank" rel="noopener noreferrer">Encyclopedie van Zeeland — Kapelle <span aria-hidden="true">↗</span></a></li>
+</ul></div></section>
+</main>
+<footer><div class="wrap footer-inner"><div><div class="footer-brand">CAPELLE <span>750</span></div><p>Een particulier en onafhankelijk historisch hobbyproject. Geen officiële website van de gemeente Capelle aan den IJssel of enige andere gemeente. Er worden op deze website geen persoonsgegevens verzameld en er worden geen analytische cookies gebruikt.</p></div><div class="legal">© 2026 Capelle750.nl<br>Website in ontwikkeling</div></div></footer>
+</body>
+</html>
